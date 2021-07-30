@@ -49,49 +49,50 @@
 
 <div class="footer">
   
-  <form action="submission.html" method="POST">
-				<h2>Connect with me!</h2>
-        <section class="protein">
-          <label for="firstname">First Name</label>
-    			<input type="text" name="firstname" id="firstname" required>
+</form>
+  
+<form id="form" class="topBefore" action="submission.html" method="POST">
+      <h2>Connect with me!</h2>
+      <section class="protein">
+        <!-- <label for="firstname">First Name</label> -->
+        <input type="text" name="firstname" id="firstname" required placeholder="Name">
+      </section>
+      <hr>
+      
+      <section class="lastname">
+        <!-- <label for="lastname">Last Name</label> -->
+        <input type="text" name="lastname" id="lastname" required placeholder="Lastname">
+      </section>
+      <hr>
+      <section class="email">
+        <!-- <label for="email">Email</label> -->
+        <input type="text" name="email" id="email" required placeholder="Email">
+      </section>
+      <hr>
+      <section class="phone">
+        <!-- <label for="phone">Phone Number</label> -->
+        <input type="text" name="phone" id="phone" pattern="[0-9]" placeholder="Phone">
+      </section>
+      <hr>
+      <section class="address">
+        <!-- <label for="address">Address</label> -->
+        <input type="text" name="address" id="address" placeholder="address">
+        <input type="text" name="state" id="state" list="states" placeholder="State"> 
+      <datalist id="states">
+  <option value="CA"></option>
+  <option value="OR"></option>
+  <option value="WA"></option>
+  <option value="MT"></option>
+  <option value="CO"></option>
+  <option value="UT"></option>
+  <option value="NM"></option>  
+</datalist>
+      </section>
+      <hr>
+      <section class="submission">
+        <input type="submit" value="Submit">
         </section>
-        <hr>
-        
-        <section class="lastname">
-          <label for="lastname">Last Name</label>
-          <input type="text" name="lastname" id="lastname" required>
-        </section>
-        <hr>
-        <section class="email">
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email" required>
-        </section>
-        <hr>
-        <section class="phone">
-          <label for="phone">Phone Number</label>
-          <input type="text" name="phone" id="phone" pattern="[0-9]">
-        </section>
-        <hr>
-        <section class="address">
-          <label for="address">Address</label>
-          <input type="text" name="address" id="address">
-          <label for="state">State</label>
-          <input type="text" name="state" id="state" list="states"> 
-        <datalist id="states">
-    <option value="CA"></option>
-    <option value="OR"></option>
-    <option value="WA"></option>
-    <option value="MT"></option>
-    <option value="CO"></option>
-    <option value="UT"></option>  
-    <option value="NM"></option>
-  </datalist>
-        </section>
-        <hr>
-        <section class="submission">
-          <input type="submit" value="Submit">
-          </section>
-      </form>
+    </form>
 </div>
   </body>
 </html>
